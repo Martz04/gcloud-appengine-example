@@ -27,7 +27,7 @@ public class ExchangeService {
 
     public String tranformCurrency(CurrencyRequest request) {
 
-        // https://api.freecurrencyapi.com/v1/latest?apikey=1XgZ0Jtf911JTT0CQlXUt7F6gbqONL0BnzqfcISt&currencies=MXN
+        // https://api.freecurrencyapi.com/v1/latest?apikey=KEY&currencies=MXN
         URI uri = UriComponentsBuilder
                 .fromHttpUrl(configuration.getUrl())
                 .queryParam("apikey", configuration.getKey())
